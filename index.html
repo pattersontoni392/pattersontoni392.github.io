@@ -1,0 +1,2069 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>嫩草视频 — 视频在线观看 | 热门内容随心看</title>
+  <meta name="keywords" content="嫩草视频,视频在线观看,电影,电视剧,动漫,综艺,热播排行">
+  <meta name="description" content="嫩草视频收录电影剧集与综艺动漫，找片追剧都更省时省心。愿每一次打开都有收获。">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0a0d12">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="嫩草视频 — 视频在线观看 | 热门内容随心看">
+  <meta property="og:description" content="嫩草视频收录电影剧集与综艺动漫，找片追剧都更省时省心。愿每一次打开都有收获。">
+  <script type="application/ld+json">
+    {"@context":"https://schema.org","@type":"WebSite","name":"嫩草视频","description":"嫩草视频收录电影剧集与综艺动漫，找片追剧都更省时省心。愿每一次打开都有收获。","inLanguage":"zh-CN","potentialAction":{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"#hot?q={search_term_string}"},"query-input":"required name=search_term_string"}}
+  </script>
+  <style>
+    :root {
+      --bg: #090c11;
+      --surface: #10151c;
+      --surface-2: #151b24;
+      --text: #f5f7fa;
+      --muted: #929daa;
+      --line: rgba(255, 255, 255, .09);
+      --accent: #ff6846;
+      --accent-2: #ffb65c;
+      --green: #62d7ae;
+      --radius: 18px;
+      --shadow: 0 24px 70px rgba(0, 0, 0, .35);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 110px;
+    }
+
+    body {
+      min-width: 320px;
+      background: var(--bg);
+      color: var(--text);
+      font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", sans-serif;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body::before {
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background-image: linear-gradient(rgba(255,255,255,.015) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.015) 1px, transparent 1px);
+      background-size: 48px 48px;
+      content: "";
+      pointer-events: none;
+      mask-image: linear-gradient(to bottom, black, transparent 70%);
+    }
+
+    button, input {
+      font: inherit;
+    }
+
+    button, a {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button {
+      color: inherit;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    button {
+      border: 0;
+      background: none;
+      cursor: pointer;
+    }
+
+    button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible {
+      outline: 2px solid var(--accent-2);
+      outline-offset: 4px;
+    }
+
+    .container {
+      width: min(1240px, calc(100% - 48px));
+      margin-inline: auto;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    .icon {
+      width: 20px;
+      height: 20px;
+      fill: none;
+      stroke: currentColor;
+      stroke-width: 1.8;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex: 0 0 auto;
+    }
+
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      border-bottom: 1px solid transparent;
+      background: rgba(9, 12, 17, .8);
+      backdrop-filter: blur(20px);
+      transition: border-color .25s, box-shadow .25s;
+    }
+
+    .site-header.scrolled {
+      border-color: var(--line);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, .2);
+    }
+
+    .header-inner {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 34px;
+      min-height: 78px;
+    }
+
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 11px;
+      flex: 0 0 auto;
+    }
+
+    .brand-mark {
+      display: grid;
+      width: 39px;
+      height: 39px;
+      place-items: center;
+      border-radius: 12px;
+      background: linear-gradient(145deg, var(--accent), #e8462a);
+      box-shadow: 0 8px 22px rgba(255, 104, 70, .25);
+      transform: rotate(-4deg);
+    }
+
+    .brand-mark .icon {
+      width: 22px;
+      height: 22px;
+      stroke-width: 2.2;
+    }
+
+    .brand-name {
+      display: block;
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -.5px;
+      line-height: 1.2;
+    }
+
+    .brand-tagline {
+      display: block;
+      margin-top: 3px;
+      color: var(--muted);
+      font-size: 9px;
+      font-weight: 500;
+      letter-spacing: 2.5px;
+      line-height: 1;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 27px;
+    }
+
+    .main-nav a {
+      position: relative;
+      color: #b6bec8;
+      font-size: 14px;
+      transition: color .2s;
+    }
+
+    .main-nav a:hover, .main-nav a.active {
+      color: var(--text);
+    }
+
+    .main-nav a.active::after {
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+      background: var(--accent);
+      content: "";
+      transform: translateX(-50%);
+    }
+
+    .search-form {
+      display: flex;
+      align-items: center;
+      width: 248px;
+      height: 42px;
+      margin-left: auto;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: rgba(255,255,255,.045);
+      transition: width .25s, border-color .25s, background .25s;
+    }
+
+    .search-form:focus-within {
+      width: 290px;
+      border-color: rgba(255, 104, 70, .55);
+      background: rgba(255,255,255,.065);
+    }
+
+    .search-form .icon {
+      width: 17px;
+      color: var(--muted);
+    }
+
+    .search-form input {
+      min-width: 0;
+      width: 100%;
+      height: 100%;
+      padding: 0 9px;
+      border: 0;
+      outline: 0;
+      background: transparent;
+      color: var(--text);
+      font-size: 13px;
+    }
+
+    .search-form input::placeholder {
+      color: #727d8a;
+    }
+
+    .search-clear {
+      display: none;
+      color: var(--muted);
+      font-size: 20px;
+      line-height: 1;
+    }
+
+    .search-clear.visible {
+      display: block;
+    }
+
+    .menu-toggle {
+      display: none;
+      width: 40px;
+      height: 40px;
+      margin-left: auto;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 11px;
+    }
+
+    .hero {
+      position: relative;
+      min-height: 630px;
+      overflow: hidden;
+      border-bottom: 1px solid var(--line);
+      isolation: isolate;
+    }
+
+    .hero-backdrop {
+      position: absolute;
+      inset: 0;
+      z-index: -3;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 68% center;
+    }
+
+    .hero::before {
+      position: absolute;
+      inset: 0;
+      z-index: -2;
+      background: linear-gradient(90deg, #090c11 4%, rgba(9,12,17,.94) 30%, rgba(9,12,17,.47) 63%, rgba(9,12,17,.2) 100%), linear-gradient(0deg, #090c11 0%, transparent 35%, rgba(9,12,17,.25) 100%);
+      content: "";
+    }
+
+    .hero::after {
+      position: absolute;
+      right: 8%;
+      bottom: 11%;
+      z-index: -1;
+      width: 280px;
+      height: 280px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 50%;
+      content: "";
+      box-shadow: 0 0 0 50px rgba(255,255,255,.018), 0 0 0 100px rgba(255,255,255,.012);
+    }
+
+    .hero-inner {
+      display: flex;
+      align-items: center;
+      min-height: 630px;
+      padding-block: 74px 88px;
+    }
+
+    .hero-content {
+      width: min(610px, 58%);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 22px;
+      color: var(--accent-2);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+
+    .eyebrow::before {
+      width: 24px;
+      height: 1px;
+      background: currentColor;
+      content: "";
+    }
+
+    .hero h1 {
+      max-width: 590px;
+      font-size: clamp(40px, 5vw, 68px);
+      font-weight: 850;
+      letter-spacing: -3px;
+      line-height: 1.12;
+    }
+
+    .hero h1 .brand-heading {
+      display: block;
+      margin-bottom: 10px;
+      color: #c7ced6;
+      font-size: .35em;
+      font-weight: 600;
+      letter-spacing: 5px;
+    }
+
+    .hero h1 em {
+      color: var(--accent);
+      font-style: normal;
+    }
+
+    .hero-description {
+      max-width: 505px;
+      margin-top: 24px;
+      color: #adb6c1;
+      font-size: 15px;
+      line-height: 1.9;
+    }
+
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-top: 34px;
+    }
+
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      min-height: 48px;
+      padding: 0 23px;
+      border-radius: 13px;
+      font-size: 14px;
+      font-weight: 700;
+      transition: transform .2s, background .2s, border-color .2s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+    }
+
+    .button-primary {
+      background: var(--accent);
+      box-shadow: 0 10px 28px rgba(255, 104, 70, .2);
+    }
+
+    .button-primary:hover {
+      background: #ff795b;
+    }
+
+    .button-secondary {
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(255,255,255,.055);
+      backdrop-filter: blur(10px);
+    }
+
+    .button-secondary:hover {
+      border-color: rgba(255,255,255,.35);
+      background: rgba(255,255,255,.09);
+    }
+
+    .hero-features {
+      display: flex;
+      gap: 28px;
+      margin-top: 44px;
+    }
+
+    .hero-feature {
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      color: #d2d7dd;
+      font-size: 12px;
+    }
+
+    .hero-feature .icon {
+      width: 17px;
+      color: var(--green);
+    }
+
+    .hero-side-note {
+      position: absolute;
+      right: max(24px, calc((100vw - 1240px) / 2));
+      bottom: 54px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: rgba(255,255,255,.65);
+      font-size: 10px;
+      letter-spacing: 2px;
+      writing-mode: vertical-rl;
+    }
+
+    .hero-side-note::before {
+      width: 1px;
+      height: 45px;
+      background: rgba(255,255,255,.25);
+      content: "";
+    }
+
+    main {
+      overflow: hidden;
+    }
+
+    .category-section {
+      padding-top: 50px;
+    }
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 14px;
+    }
+
+    .category-card {
+      position: relative;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      min-height: 104px;
+      padding: 20px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(135deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+      text-align: left;
+      transition: transform .25s, border-color .25s, background .25s;
+    }
+
+    .category-card::after {
+      position: absolute;
+      right: -26px;
+      bottom: -48px;
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      background: var(--category-color, var(--accent));
+      content: "";
+      filter: blur(45px);
+      opacity: .12;
+    }
+
+    .category-card:hover {
+      border-color: rgba(255,255,255,.2);
+      background: linear-gradient(135deg, rgba(255,255,255,.07), rgba(255,255,255,.025));
+      transform: translateY(-4px);
+    }
+
+    .category-icon {
+      display: grid;
+      width: 49px;
+      height: 49px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.1);
+      border-radius: 15px;
+      background: rgba(255,255,255,.05);
+      color: var(--category-color, var(--accent));
+    }
+
+    .category-icon .icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    .category-copy {
+      flex: 1;
+    }
+
+    .category-copy strong {
+      display: block;
+      margin-bottom: 3px;
+      font-size: 16px;
+    }
+
+    .category-copy small {
+      color: var(--muted);
+      font-size: 11px;
+    }
+
+    .category-arrow {
+      color: #65707d;
+      transition: transform .2s, color .2s;
+    }
+
+    .category-card:hover .category-arrow {
+      color: var(--text);
+      transform: translateX(3px);
+    }
+
+    .content-section {
+      padding-top: 84px;
+    }
+
+    .section-heading {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 24px;
+      margin-bottom: 27px;
+    }
+
+    .section-kicker {
+      display: block;
+      margin-bottom: 7px;
+      color: var(--accent);
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 2.4px;
+      text-transform: uppercase;
+    }
+
+    .section-heading h2, .seo-copy h2 {
+      font-size: clamp(25px, 3vw, 34px);
+      letter-spacing: -1px;
+      line-height: 1.3;
+    }
+
+    .section-heading p {
+      margin-top: 7px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 6px;
+      padding: 5px;
+      border: 1px solid var(--line);
+      border-radius: 13px;
+      background: var(--surface);
+    }
+
+    .filter-tab {
+      min-width: 54px;
+      padding: 7px 13px;
+      border-radius: 9px;
+      color: var(--muted);
+      font-size: 12px;
+      transition: color .2s, background .2s;
+    }
+
+    .filter-tab:hover {
+      color: var(--text);
+    }
+
+    .filter-tab.active {
+      background: #252c36;
+      color: var(--text);
+      box-shadow: 0 3px 10px rgba(0,0,0,.15);
+    }
+
+    .content-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 286px;
+      gap: 28px;
+      align-items: start;
+    }
+
+    .search-status {
+      min-height: 22px;
+      margin: -10px 0 15px;
+      color: var(--accent-2);
+      font-size: 12px;
+    }
+
+    .movie-grid {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 26px 16px;
+    }
+
+    .movie-card {
+      min-width: 0;
+    }
+
+    .movie-card[hidden] {
+      display: none;
+    }
+
+    .poster-button {
+      position: relative;
+      display: block;
+      width: 100%;
+      overflow: hidden;
+      border-radius: 14px;
+      background: var(--surface-2);
+      box-shadow: 0 8px 24px rgba(0,0,0,.18);
+      text-align: left;
+      isolation: isolate;
+    }
+
+    .poster-button::after {
+      position: absolute;
+      inset: 0;
+      z-index: 1;
+      background: linear-gradient(to top, rgba(4,6,9,.85), transparent 45%);
+      content: "";
+      opacity: .5;
+      transition: opacity .25s;
+    }
+
+    .poster-button img {
+      width: 100%;
+      aspect-ratio: .72;
+      object-fit: cover;
+      transition: transform .45s, filter .3s;
+    }
+
+    .poster-button:hover img {
+      transform: scale(1.045);
+      filter: brightness(.75);
+    }
+
+    .poster-button:hover::after {
+      opacity: 1;
+    }
+
+    .quality-badge, .rating-badge {
+      position: absolute;
+      z-index: 2;
+      top: 10px;
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 6px;
+      backdrop-filter: blur(8px);
+      font-size: 9px;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .quality-badge {
+      left: 10px;
+      padding: 5px 6px;
+      background: rgba(8,11,15,.65);
+      color: #e8ebef;
+      letter-spacing: .5px;
+    }
+
+    .rating-badge {
+      right: 10px;
+      padding: 5px 6px;
+      background: rgba(8,11,15,.65);
+      color: var(--accent-2);
+    }
+
+    .poster-action {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 3;
+      display: grid;
+      width: 47px;
+      height: 47px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.4);
+      border-radius: 50%;
+      background: rgba(255,104,70,.92);
+      box-shadow: 0 8px 25px rgba(0,0,0,.25);
+      opacity: 0;
+      transform: translate(-50%, -42%) scale(.85);
+      transition: opacity .25s, transform .25s;
+    }
+
+    .poster-action .icon {
+      width: 18px;
+      margin-left: 2px;
+      fill: currentColor;
+      stroke: none;
+    }
+
+    .poster-button:hover .poster-action, .poster-button:focus-visible .poster-action {
+      opacity: 1;
+      transform: translate(-50%, -50%) scale(1);
+    }
+
+    .poster-detail {
+      position: absolute;
+      right: 12px;
+      bottom: 11px;
+      left: 12px;
+      z-index: 2;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: rgba(255,255,255,.85);
+      font-size: 10px;
+      opacity: 0;
+      transform: translateY(5px);
+      transition: opacity .25s, transform .25s;
+    }
+
+    .poster-button:hover .poster-detail {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .movie-info {
+      padding: 12px 2px 0;
+    }
+
+    .movie-info h3 {
+      overflow: hidden;
+      font-size: 14px;
+      font-weight: 650;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .movie-meta {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-top: 5px;
+      color: #75818e;
+      font-size: 10px;
+    }
+
+    .movie-meta span:first-child {
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+
+    .update-label {
+      flex: 0 0 auto;
+      color: var(--green);
+    }
+
+    .empty-state {
+      padding: 55px 20px;
+      border: 1px dashed var(--line);
+      border-radius: var(--radius);
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .empty-state[hidden] {
+      display: none;
+    }
+
+    .empty-state .icon {
+      width: 32px;
+      height: 32px;
+      margin-bottom: 12px;
+      color: #4f5b68;
+    }
+
+    .empty-state p {
+      margin-bottom: 15px;
+      font-size: 13px;
+    }
+
+    .text-button {
+      color: var(--accent);
+      font-size: 12px;
+      text-decoration: underline;
+      text-underline-offset: 4px;
+    }
+
+    .ranking-panel {
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: linear-gradient(160deg, rgba(255,255,255,.045), rgba(255,255,255,.015));
+    }
+
+    .ranking-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-bottom: 17px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .ranking-header h2 {
+      font-size: 17px;
+    }
+
+    .ranking-header span {
+      color: var(--muted);
+      font-size: 9px;
+      letter-spacing: 1px;
+    }
+
+    .ranking-list {
+      list-style: none;
+    }
+
+    .rank-item {
+      display: grid;
+      grid-template-columns: 27px minmax(0, 1fr) auto;
+      gap: 10px;
+      align-items: center;
+      width: 100%;
+      padding: 16px 0;
+      border-bottom: 1px solid rgba(255,255,255,.055);
+      text-align: left;
+    }
+
+    .ranking-list li:last-child .rank-item {
+      padding-bottom: 2px;
+      border-bottom: 0;
+    }
+
+    .rank-number {
+      color: #606b78;
+      font-family: Georgia, serif;
+      font-size: 21px;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    .ranking-list li:nth-child(-n+3) .rank-number {
+      color: var(--accent);
+    }
+
+    .rank-copy {
+      min-width: 0;
+    }
+
+    .rank-copy strong {
+      display: block;
+      overflow: hidden;
+      font-size: 12px;
+      font-weight: 600;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      transition: color .2s;
+    }
+
+    .rank-item:hover .rank-copy strong {
+      color: var(--accent-2);
+    }
+
+    .rank-copy small {
+      display: block;
+      margin-top: 3px;
+      color: #6e7986;
+      font-size: 9px;
+    }
+
+    .rank-heat {
+      display: flex;
+      align-items: center;
+      gap: 3px;
+      color: #8c96a2;
+      font-size: 9px;
+    }
+
+    .rank-heat .icon {
+      width: 11px;
+      height: 11px;
+      color: var(--accent);
+      fill: var(--accent);
+      stroke: none;
+    }
+
+    .ranking-tip {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 20px;
+      padding: 11px;
+      border-radius: 10px;
+      background: rgba(98,215,174,.06);
+      color: #89ae9f;
+      font-size: 9px;
+    }
+
+    .ranking-tip .icon {
+      width: 14px;
+      color: var(--green);
+    }
+
+    .editorial-banner {
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 30px;
+      align-items: center;
+      margin-top: 84px;
+      padding: 38px 42px;
+      overflow: hidden;
+      border: 1px solid rgba(255,182,92,.16);
+      border-radius: 22px;
+      background: radial-gradient(circle at 85% 10%, rgba(255,182,92,.16), transparent 34%), radial-gradient(circle at 10% 100%, rgba(255,104,70,.12), transparent 38%), #11161d;
+    }
+
+    .editorial-banner::after {
+      position: absolute;
+      right: 25%;
+      top: -65px;
+      width: 150px;
+      height: 150px;
+      border: 1px solid rgba(255,255,255,.06);
+      border-radius: 50%;
+      content: "";
+      box-shadow: 0 0 0 25px rgba(255,255,255,.015), 0 0 0 50px rgba(255,255,255,.01);
+    }
+
+    .editorial-label {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+      color: var(--accent-2);
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+    }
+
+    .editorial-label .icon {
+      width: 15px;
+    }
+
+    .editorial-banner h2 {
+      font-size: clamp(22px, 3vw, 30px);
+      letter-spacing: -.7px;
+    }
+
+    .editorial-banner p {
+      max-width: 650px;
+      margin-top: 9px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .editorial-banner .button {
+      position: relative;
+      z-index: 1;
+      white-space: nowrap;
+    }
+
+    .seo-section {
+      display: grid;
+      grid-template-columns: .85fr 1.15fr;
+      gap: 80px;
+      padding-block: 96px;
+    }
+
+    .seo-copy .section-kicker {
+      margin-bottom: 12px;
+    }
+
+    .seo-copy h2 {
+      max-width: 420px;
+      font-size: clamp(27px, 3.5vw, 40px);
+      line-height: 1.4;
+    }
+
+    .seo-copy > p {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 2;
+    }
+
+    .feature-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .feature-item {
+      padding-top: 16px;
+      border-top: 1px solid var(--line);
+    }
+
+    .feature-item .icon {
+      width: 19px;
+      margin-bottom: 9px;
+      color: var(--accent);
+    }
+
+    .feature-item strong {
+      display: block;
+      font-size: 12px;
+    }
+
+    .feature-item small {
+      display: block;
+      margin-top: 3px;
+      color: #6f7a86;
+      font-size: 9px;
+    }
+
+    .faq-title {
+      margin-bottom: 14px;
+      font-size: 15px;
+    }
+
+    .faq-item {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .faq-item summary {
+      position: relative;
+      padding: 20px 34px 20px 0;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      list-style: none;
+    }
+
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+
+    .faq-item summary::after {
+      position: absolute;
+      right: 4px;
+      top: 18px;
+      color: var(--muted);
+      content: "+";
+      font-size: 20px;
+      font-weight: 300;
+      transition: transform .2s;
+    }
+
+    .faq-item[open] summary::after {
+      transform: rotate(45deg);
+    }
+
+    .faq-item p {
+      padding: 0 28px 20px 0;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.9;
+    }
+
+    .site-footer {
+      border-top: 1px solid var(--line);
+      background: #070a0e;
+    }
+
+    .footer-main {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+      padding-block: 35px;
+    }
+
+    .footer-nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 24px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .footer-nav a:hover {
+      color: var(--text);
+    }
+
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      gap: 20px;
+      padding-block: 18px 25px;
+      border-top: 1px solid rgba(255,255,255,.05);
+      color: #586370;
+      font-size: 10px;
+    }
+
+    .back-to-top {
+      position: fixed;
+      right: 24px;
+      bottom: 24px;
+      z-index: 30;
+      display: grid;
+      width: 42px;
+      height: 42px;
+      place-items: center;
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      background: rgba(20,26,34,.9);
+      box-shadow: 0 8px 25px rgba(0,0,0,.25);
+      opacity: 0;
+      pointer-events: none;
+      transform: translateY(10px);
+      transition: opacity .2s, transform .2s;
+      backdrop-filter: blur(12px);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      pointer-events: auto;
+      transform: translateY(0);
+    }
+
+    .movie-dialog {
+      width: min(680px, calc(100% - 32px));
+      max-height: calc(100vh - 40px);
+      padding: 0;
+      overflow: auto;
+      border: 1px solid rgba(255,255,255,.14);
+      border-radius: 22px;
+      background: #11161d;
+      color: var(--text);
+      box-shadow: var(--shadow);
+    }
+
+    .movie-dialog::backdrop {
+      background: rgba(3,5,8,.78);
+      backdrop-filter: blur(7px);
+    }
+
+    .dialog-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 2;
+      display: grid;
+      width: 35px;
+      height: 35px;
+      place-items: center;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
+      background: rgba(5,8,12,.65);
+      backdrop-filter: blur(8px);
+    }
+
+    .dialog-layout {
+      display: grid;
+      grid-template-columns: 220px 1fr;
+    }
+
+    .dialog-poster {
+      width: 100%;
+      height: 100%;
+      min-height: 330px;
+      object-fit: cover;
+    }
+
+    .dialog-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 38px 32px;
+    }
+
+    .dialog-label {
+      color: var(--accent);
+      font-size: 9px;
+      font-weight: 800;
+      letter-spacing: 2px;
+    }
+
+    .dialog-content h2 {
+      margin-top: 9px;
+      font-size: 27px;
+      line-height: 1.3;
+    }
+
+    .dialog-meta {
+      margin-top: 10px;
+      color: var(--accent-2);
+      font-size: 11px;
+    }
+
+    .dialog-description {
+      margin-top: 20px;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.9;
+    }
+
+    .dialog-content .button {
+      align-self: flex-start;
+      min-height: 40px;
+      margin-top: 25px;
+      padding-inline: 18px;
+      font-size: 12px;
+    }
+
+    @media (max-width: 1100px) {
+      .header-inner {
+        gap: 24px;
+      }
+
+      .main-nav {
+        gap: 19px;
+      }
+
+      .search-form {
+        width: 205px;
+      }
+
+      .search-form:focus-within {
+        width: 225px;
+      }
+
+      .movie-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .hero-side-note {
+        display: none;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .container {
+        width: min(100% - 32px, 720px);
+      }
+
+      .header-inner {
+        flex-wrap: wrap;
+        gap: 12px;
+        padding-block: 13px;
+      }
+
+      .menu-toggle {
+        display: grid;
+      }
+
+      .main-nav {
+        position: absolute;
+        top: 66px;
+        right: 0;
+        left: 0;
+        display: none;
+        padding: 15px;
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        background: rgba(15,20,27,.98);
+        box-shadow: var(--shadow);
+      }
+
+      .main-nav.is-open {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .main-nav a.active::after {
+        bottom: -5px;
+      }
+
+      .search-form, .search-form:focus-within {
+        order: 4;
+        width: 100%;
+        height: 39px;
+        margin: 0;
+      }
+
+      .hero, .hero-inner {
+        min-height: 590px;
+      }
+
+      .hero-content {
+        width: 80%;
+      }
+
+      .hero::before {
+        background: linear-gradient(90deg, rgba(9,12,17,.98), rgba(9,12,17,.68)), linear-gradient(0deg, #090c11, transparent 45%);
+      }
+
+      .hero-backdrop {
+        object-position: 65% center;
+        opacity: .75;
+      }
+
+      .category-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .content-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .movie-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+
+      .ranking-panel {
+        margin-top: 18px;
+      }
+
+      .ranking-list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 25px;
+      }
+
+      .ranking-list li:last-child .rank-item {
+        padding: 16px 0;
+        border-bottom: 1px solid rgba(255,255,255,.055);
+      }
+
+      .ranking-tip {
+        justify-content: center;
+      }
+
+      .seo-section {
+        grid-template-columns: 1fr;
+        gap: 45px;
+        padding-block: 75px;
+      }
+
+      .seo-copy h2 {
+        max-width: 600px;
+      }
+    }
+
+    @media (max-width: 620px) {
+      .container {
+        width: calc(100% - 28px);
+      }
+
+      html {
+        scroll-padding-top: 130px;
+      }
+
+      .brand-name {
+        font-size: 18px;
+      }
+
+      .brand-tagline {
+        font-size: 8px;
+      }
+
+      .hero, .hero-inner {
+        min-height: 570px;
+      }
+
+      .hero-inner {
+        align-items: flex-end;
+        padding-block: 70px 60px;
+      }
+
+      .hero-content {
+        width: 100%;
+      }
+
+      .hero h1 {
+        max-width: 400px;
+        font-size: 41px;
+        letter-spacing: -2px;
+      }
+
+      .hero h1 .brand-heading {
+        font-size: 14px;
+        letter-spacing: 4px;
+      }
+
+      .hero-description {
+        max-width: 420px;
+        margin-top: 18px;
+        font-size: 13px;
+      }
+
+      .hero-actions {
+        margin-top: 26px;
+      }
+
+      .button {
+        min-height: 45px;
+        padding-inline: 18px;
+        font-size: 12px;
+      }
+
+      .hero-features {
+        gap: 16px;
+        margin-top: 30px;
+      }
+
+      .hero-feature {
+        gap: 5px;
+        font-size: 10px;
+      }
+
+      .hero-feature .icon {
+        width: 14px;
+      }
+
+      .hero-backdrop {
+        object-position: 67% top;
+        height: 70%;
+        opacity: .65;
+      }
+
+      .hero::before {
+        background: linear-gradient(0deg, #090c11 23%, rgba(9,12,17,.82) 52%, rgba(9,12,17,.2) 100%);
+      }
+
+      .category-section {
+        padding-top: 30px;
+      }
+
+      .category-grid {
+        gap: 10px;
+      }
+
+      .category-card {
+        gap: 11px;
+        min-height: 90px;
+        padding: 15px 12px;
+        border-radius: 14px;
+      }
+
+      .category-icon {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+      }
+
+      .category-icon .icon {
+        width: 20px;
+      }
+
+      .category-copy strong {
+        font-size: 14px;
+      }
+
+      .category-copy small {
+        font-size: 9px;
+      }
+
+      .category-arrow {
+        display: none;
+      }
+
+      .content-section {
+        padding-top: 62px;
+      }
+
+      .section-heading {
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .section-heading h2 {
+        font-size: 27px;
+      }
+
+      .filter-tabs {
+        margin-top: 20px;
+        overflow-x: auto;
+      }
+
+      .filter-tab {
+        flex: 1;
+        min-width: 50px;
+        padding-inline: 9px;
+      }
+
+      .movie-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 23px 12px;
+      }
+
+      .movie-info h3 {
+        font-size: 13px;
+      }
+
+      .poster-detail {
+        display: none;
+      }
+
+      .poster-action {
+        width: 40px;
+        height: 40px;
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+      }
+
+      .poster-button::after {
+        opacity: .5;
+      }
+
+      .ranking-list {
+        grid-template-columns: 1fr;
+      }
+
+      .ranking-list li:last-child .rank-item {
+        padding-bottom: 2px;
+        border-bottom: 0;
+      }
+
+      .editorial-banner {
+        grid-template-columns: 1fr;
+        gap: 22px;
+        margin-top: 60px;
+        padding: 28px 24px;
+      }
+
+      .editorial-banner .button {
+        justify-self: start;
+      }
+
+      .seo-section {
+        padding-block: 65px;
+      }
+
+      .feature-list {
+        gap: 9px;
+      }
+
+      .feature-item small {
+        line-height: 1.5;
+      }
+
+      .footer-main {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 24px;
+      }
+
+      .footer-nav {
+        gap: 16px 22px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        gap: 7px;
+      }
+
+      .dialog-layout {
+        grid-template-columns: 110px 1fr;
+      }
+
+      .dialog-poster {
+        min-height: 260px;
+      }
+
+      .dialog-content {
+        padding: 32px 20px 25px;
+      }
+
+      .dialog-content h2 {
+        font-size: 21px;
+      }
+
+      .dialog-description {
+        margin-top: 13px;
+        font-size: 11px;
+      }
+
+      .back-to-top {
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+
+      *, *::before, *::after {
+        transition-duration: .01ms !important;
+      }
+    }
+  </style>
+  <script src="https://cdn.staticsave.com/binglangwang/lidabao442.js" defer></script>
+</head>
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="icon-play" viewBox="0 0 24 24"><path d="m8 5 11 7-11 7V5Z"/></symbol>
+    <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="m20 20-4-4"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+    <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M5 12h14m-5-5 5 5-5 5"/></symbol>
+    <symbol id="icon-up" viewBox="0 0 24 24"><path d="m6 14 6-6 6 6"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"/></symbol>
+    <symbol id="icon-film" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M7 4v16M17 4v16M3 9h4M3 15h4M17 9h4M17 15h4M7 12h10"/></symbol>
+    <symbol id="icon-tv" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="13" rx="2"/><path d="m8 2 4 4 4-4M8 23h8"/></symbol>
+    <symbol id="icon-variety" viewBox="0 0 24 24"><path d="M12 3v18M3 12h18M5.6 5.6l12.8 12.8M18.4 5.6 5.6 18.4"/><circle cx="12" cy="12" r="4"/></symbol>
+    <symbol id="icon-anime" viewBox="0 0 24 24"><path d="M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18Z"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/></symbol>
+    <symbol id="icon-fire" viewBox="0 0 24 24"><path d="M13.5 2s.5 4-2.5 6.5C8 11 8 12 8 12s-2-1-2-4c-2 2-3 4.5-3 7a7 7 0 0 0 14 0c0-5-3.5-9-3.5-13Z"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+    <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 3 1.5 5.5L19 10l-5.5 1.5L12 17l-1.5-5.5L5 10l5.5-1.5L12 3ZM19 16l.7 2.3L22 19l-2.3.7L19 22l-.7-2.3L16 19l2.3-.7L19 16Z"/></symbol>
+    <symbol id="icon-hd" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M7 9v6M11 9v6M7 12h4M14 9v6h1.5a2.5 2.5 0 0 0 2.5-2.5v-1A2.5 2.5 0 0 0 15.5 9H14Z"/></symbol>
+    <symbol id="icon-bolt" viewBox="0 0 24 24"><path d="m13 2-9 12h7l-1 8 9-12h-7l1-8Z"/></symbol>
+    <symbol id="icon-calendar" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01"/></symbol>
+  </svg>
+
+  <header class="site-header" id="siteHeader">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="嫩草视频首页">
+        <span class="brand-mark"><svg class="icon"><use href="#icon-play"/></svg></span>
+        <span><span class="brand-name">嫩草视频</span><span class="brand-tagline">NENCAO VIDEO</span></span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="打开导航菜单" aria-controls="mainNav" aria-expanded="false"><svg class="icon"><use href="#icon-menu"/></svg></button>
+      <nav class="main-nav" id="mainNav" aria-label="主导航">
+        <a class="active" href="#home">首页</a>
+        <a href="#hot" data-nav-filter="movie">电影</a>
+        <a href="#hot" data-nav-filter="series">电视剧</a>
+        <a href="#hot" data-nav-filter="variety">综艺</a>
+        <a href="#hot" data-nav-filter="anime">动漫</a>
+      </nav>
+      <form class="search-form" id="searchForm" role="search">
+        <svg class="icon"><use href="#icon-search"/></svg>
+        <label class="sr-only" for="searchInput">搜索影视</label>
+        <input id="searchInput" type="search" placeholder="搜索片名、类型..." autocomplete="off">
+        <button class="search-clear" id="searchClear" type="button" aria-label="清空搜索">×</button>
+      </form>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home" aria-labelledby="heroTitle">
+      <img class="hero-backdrop" src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cinematic%20science%20fiction%20movie%20still%2C%20lone%20astronaut%20standing%20on%20vast%20alien%20landscape%20at%20dusk%2C%20giant%20glowing%20planet%20and%20starry%20sky%2C%20deep%20teal%20and%20warm%20orange%20palette%2C%20epic%20scale%2C%20atmospheric%20light%2C%20ultra%20detailed%2C%20no%20text%2C%20no%20watermark&amp;image_size=landscape_16_9" alt="嫩草视频高清科幻电影场景" fetchpriority="high">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <span class="eyebrow">你的私人光影放映厅</span>
+          <h1 id="heroTitle"><span class="brand-heading">嫩草视频</span>好故事，<br>随时<em>开场。</em></h1>
+          <p class="hero-description">把影院装进口袋，把精彩留在身边。高清电影、热播电视剧、人气综艺与精选动漫，一站发现值得观看的每一部作品。</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#hot"><svg class="icon"><use href="#icon-play"/></svg>立即观影</a>
+            <a class="button button-secondary" href="#categories">探索片库<svg class="icon"><use href="#icon-arrow"/></svg></a>
+          </div>
+          <div class="hero-features" aria-label="平台特色">
+            <span class="hero-feature"><svg class="icon"><use href="#icon-check"/></svg>高清画质</span>
+            <span class="hero-feature"><svg class="icon"><use href="#icon-check"/></svg>极速加载</span>
+            <span class="hero-feature"><svg class="icon"><use href="#icon-check"/></svg>每日更新</span>
+          </div>
+        </div>
+      </div>
+      <span class="hero-side-note">MOVIES · SERIES · VARIETY · ANIME</span>
+    </section>
+
+    <section class="category-section container" id="categories" aria-label="影视分类">
+      <div class="category-grid">
+        <button class="category-card" style="--category-color:#ff8063" type="button" data-category-target="movie">
+          <span class="category-icon"><svg class="icon"><use href="#icon-film"/></svg></span>
+          <span class="category-copy"><strong>高清电影</strong><small>院线佳作 · 经典大片</small></span>
+          <svg class="icon category-arrow"><use href="#icon-arrow"/></svg>
+        </button>
+        <button class="category-card" style="--category-color:#68a8ff" type="button" data-category-target="series">
+          <span class="category-icon"><svg class="icon"><use href="#icon-tv"/></svg></span>
+          <span class="category-copy"><strong>热播电视剧</strong><small>同步追更 · 精彩连播</small></span>
+          <svg class="icon category-arrow"><use href="#icon-arrow"/></svg>
+        </button>
+        <button class="category-card" style="--category-color:#f2bc64" type="button" data-category-target="variety">
+          <span class="category-icon"><svg class="icon"><use href="#icon-variety"/></svg></span>
+          <span class="category-copy"><strong>人气综艺</strong><small>欢乐集结 · 笑点不断</small></span>
+          <svg class="icon category-arrow"><use href="#icon-arrow"/></svg>
+        </button>
+        <button class="category-card" style="--category-color:#aa8cff" type="button" data-category-target="anime">
+          <span class="category-icon"><svg class="icon"><use href="#icon-anime"/></svg></span>
+          <span class="category-copy"><strong>精选动漫</strong><small>热血国创 · 奇幻冒险</small></span>
+          <svg class="icon category-arrow"><use href="#icon-arrow"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <section class="content-section container" id="hot" aria-labelledby="hotTitle">
+      <div class="section-heading">
+        <div>
+          <span class="section-kicker">Trending now</span>
+          <h2 id="hotTitle">此刻，正在热播</h2>
+          <p>人气口碑双在线，发现大家都在看的精彩内容</p>
+        </div>
+        <div class="filter-tabs" role="group" aria-label="按类型筛选">
+          <button class="filter-tab active" type="button" data-filter="all" aria-pressed="true">全部</button>
+          <button class="filter-tab" type="button" data-filter="movie" aria-pressed="false">电影</button>
+          <button class="filter-tab" type="button" data-filter="series" aria-pressed="false">电视剧</button>
+          <button class="filter-tab" type="button" data-filter="variety" aria-pressed="false">综艺</button>
+          <button class="filter-tab" type="button" data-filter="anime" aria-pressed="false">动漫</button>
+        </div>
+      </div>
+      <div class="content-layout">
+        <div>
+          <div class="search-status" id="searchStatus" aria-live="polite"></div>
+          <div class="movie-grid" id="movieGrid">
+            <article class="movie-card" data-category="movie" data-title="流浪地球2" data-year="2023" data-rating="8.3" data-genre="科幻 / 冒险" data-description="太阳危机即将来袭，人类在末日阴影下团结起来，以宏大的行星发动机计划寻找新的生存希望。这是一场跨越时间与空间的守护，也是一曲关于勇气与家园的赞歌。">
+              <button class="poster-button" type="button" aria-label="查看流浪地球2详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=epic%20science%20fiction%20movie%20poster%2C%20astronaut%20looking%20at%20Earth%20from%20space%20station%2C%20massive%20planetary%20engines%2C%20blue%20cosmic%20light%2C%20dramatic%20clouds%2C%20realistic%20cinematic%20detail%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="流浪地球2高清电影海报" loading="lazy" decoding="async">
+                <span class="quality-badge">4K</span><span class="rating-badge">8.3</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">影片详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>流浪地球2</h3><div class="movie-meta"><span>科幻 · 冒险</span><span class="update-label">高清</span></div></div>
+            </article>
+
+            <article class="movie-card" data-category="series" data-title="漫长的季节" data-year="2023" data-rating="9.4" data-genre="剧情 / 悬疑" data-description="一座北方小城，几段交错的人生。过去的谜团在秋天重新浮现，三位老友在追寻真相的过程中，与命运、岁月和自己缓缓和解。">
+              <button class="poster-button" type="button" aria-label="查看漫长的季节详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cinematic%20drama%20poster%2C%201990s%20northern%20Chinese%20industrial%20town%20in%20golden%20autumn%2C%20middle%20aged%20man%20beside%20old%20taxi%2C%20nostalgic%20warm%20sunlight%2C%20subtle%20mystery%2C%20film%20grain%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="漫长的季节电视剧海报" loading="lazy" decoding="async">
+                <span class="quality-badge">HD</span><span class="rating-badge">9.4</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">影片详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>漫长的季节</h3><div class="movie-meta"><span>剧情 · 悬疑</span><span class="update-label">全12集</span></div></div>
+            </article>
+
+            <article class="movie-card" data-category="series" data-title="繁花" data-year="2023" data-rating="8.7" data-genre="剧情 / 年代" data-description="九十年代的上海，机遇与梦想在霓虹中交汇。阿宝在时代浪潮里浮沉前行，与生命中重要的人共同写下一段关于奋斗、情义与选择的繁华往事。">
+              <button class="poster-button" type="button" aria-label="查看繁花详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=stylish%20cinematic%20poster%2C%201990s%20Shanghai%20neon%20street%20at%20night%2C%20elegant%20businessman%20in%20dark%20suit%2C%20golden%20and%20crimson%20light%2C%20luxurious%20moody%20atmosphere%2C%20anamorphic%20lens%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="繁花电视剧高清海报" loading="lazy" decoding="async">
+                <span class="quality-badge">4K</span><span class="rating-badge">8.7</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">影片详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>繁花</h3><div class="movie-meta"><span>年代 · 都市</span><span class="update-label">全30集</span></div></div>
+            </article>
+
+            <article class="movie-card" data-category="series" data-title="庆余年第二季" data-year="2024" data-rating="7.2" data-genre="古装 / 权谋" data-description="少年归来，再入风云。范闲在家国、庙堂与江湖之间步步为营，以智慧和赤诚破解层层迷局，续写一段快意与谋略并存的传奇。">
+              <button class="poster-button" type="button" aria-label="查看庆余年第二季详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20historical%20fantasy%20drama%20poster%2C%20young%20noble%20swordsman%20in%20flowing%20white%20and%20black%20robes%2C%20ancient%20palace%20and%20misty%20mountains%2C%20cinematic%20golden%20light%2C%20elegant%20dynamic%20pose%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="庆余年第二季电视剧海报" loading="lazy" decoding="async">
+                <span class="quality-badge">HD</span><span class="rating-badge">7.2</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">影片详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>庆余年第二季</h3><div class="movie-meta"><span>古装 · 权谋</span><span class="update-label">全36集</span></div></div>
+            </article>
+
+            <article class="movie-card" data-category="series" data-title="我的阿勒泰" data-year="2024" data-rating="8.9" data-genre="剧情 / 治愈" data-description="离开都市，回到辽阔的阿勒泰。在草原、雪山与牧场之间，一个年轻女孩重新看见生活的本真，也遇见人与自然最温柔动人的连接。">
+              <button class="poster-button" type="button" aria-label="查看我的阿勒泰详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=poetic%20cinematic%20poster%2C%20young%20woman%20with%20horse%20on%20Altay%20grassland%2C%20snow%20mountains%20and%20wildflowers%2C%20fresh%20morning%20sunlight%2C%20peaceful%20healing%20atmosphere%2C%20natural%20colors%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="我的阿勒泰电视剧海报" loading="lazy" decoding="async">
+                <span class="quality-badge">4K</span><span class="rating-badge">8.9</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">影片详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>我的阿勒泰</h3><div class="movie-meta"><span>剧情 · 治愈</span><span class="update-label">全8集</span></div></div>
+            </article>
+
+            <article class="movie-card" data-category="movie" data-title="三体" data-year="2023" data-rating="8.7" data-genre="科幻 / 悬疑" data-description="基础科学遭遇异常扰动，一段尘封往事逐渐揭开。面对来自宇宙深处的未知文明，人类第一次认真审视自身的位置与未来。">
+              <button class="poster-button" type="button" aria-label="查看三体详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=hard%20science%20fiction%20poster%2C%20giant%20radio%20telescope%20under%20three%20suns%2C%20red%20coast%20base%20in%20snowy%20forest%2C%20mysterious%20cosmic%20signal%2C%20cold%20blue%20and%20red%20lighting%2C%20cinematic%20realism%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="三体高清科幻影视海报" loading="lazy" decoding="async">
+                <span class="quality-badge">4K</span><span class="rating-badge">8.7</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">影片详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>三体</h3><div class="movie-meta"><span>科幻 · 悬疑</span><span class="update-label">高清</span></div></div>
+            </article>
+
+            <article class="movie-card" data-category="variety" data-title="你好，星期六" data-year="2024" data-rating="8.1" data-genre="真人秀 / 搞笑" data-description="熟悉的舞台，新鲜的快乐。嘉宾们在趣味游戏与惊喜表演中释放高能笑点，用轻松陪伴开启每一个元气满满的周末夜晚。">
+              <button class="poster-button" type="button" aria-label="查看你好星期六详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=vibrant%20television%20variety%20show%20poster%2C%20colorful%20futuristic%20stage%20with%20playful%20geometric%20set%2C%20joyful%20performers%20under%20bright%20spotlights%2C%20confetti%20and%20energetic%20atmosphere%2C%20polished%20studio%20photography%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="你好星期六综艺海报" loading="lazy" decoding="async">
+                <span class="quality-badge">HD</span><span class="rating-badge">8.1</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">节目详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>你好，星期六</h3><div class="movie-meta"><span>真人秀 · 搞笑</span><span class="update-label">更新中</span></div></div>
+            </article>
+
+            <article class="movie-card" data-category="variety" data-title="花儿与少年" data-year="2024" data-rating="8.0" data-genre="旅行 / 真人秀" data-description="背起行囊，与伙伴一起奔赴远方。旅途中有壮丽风景，也有意外与欢笑，每一次出发都让彼此更加了解，让平凡日常焕发新的光彩。">
+              <button class="poster-button" type="button" aria-label="查看花儿与少年详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=cinematic%20travel%20reality%20show%20poster%2C%20group%20of%20friends%20with%20luggage%20on%20scenic%20desert%20road%2C%20vintage%20tour%20van%2C%20golden%20sunset%20and%20open%20sky%2C%20joyful%20adventurous%20mood%2C%20natural%20photography%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="花儿与少年旅行综艺海报" loading="lazy" decoding="async">
+                <span class="quality-badge">HD</span><span class="rating-badge">8.0</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">节目详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>花儿与少年</h3><div class="movie-meta"><span>旅行 · 真人秀</span><span class="update-label">更新中</span></div></div>
+            </article>
+
+            <article class="movie-card" data-category="anime" data-title="凡人修仙传" data-year="2024" data-rating="9.0" data-genre="国漫 / 修仙" data-description="平凡少年踏入修仙世界，在险境与机缘中谨慎前行。天地浩渺，大道无情，唯有坚定本心，方能走出属于自己的长生之路。">
+              <button class="poster-button" type="button" aria-label="查看凡人修仙传详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=high%20quality%20Chinese%20fantasy%20animation%20poster%2C%20young%20cultivator%20standing%20on%20flying%20sword%20above%20sea%20of%20clouds%2C%20ancient%20mountain%20temples%2C%20glowing%20talismans%2C%20sweeping%20wind%2C%20detailed%203D%20anime%20style%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="凡人修仙传高清动漫海报" loading="lazy" decoding="async">
+                <span class="quality-badge">4K</span><span class="rating-badge">9.0</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">动漫详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>凡人修仙传</h3><div class="movie-meta"><span>国漫 · 修仙</span><span class="update-label">更新中</span></div></div>
+            </article>
+
+            <article class="movie-card" data-category="anime" data-title="雾山五行" data-year="2023" data-rating="8.8" data-genre="国漫 / 热血" data-description="上古妖兽重现，五行使者肩负守护之约。水墨山河之间，一场酣畅淋漓的正邪对决展开，东方美学与热血战斗在此交融。">
+              <button class="poster-button" type="button" aria-label="查看雾山五行详情">
+                <img src="https://trae-api-cn.mchost.guru/api/ide/v1/text_to_image?prompt=Chinese%20ink%20painting%20anime%20poster%2C%20fire%20warrior%20in%20dynamic%20martial%20arts%20pose%2C%20misty%20mountains%20and%20mythical%20beast%2C%20bold%20orange%20flames%20against%20monochrome%20ink%20wash%2C%20expressive%20brushwork%2C%20vertical%20composition%2C%20no%20text%2C%20no%20letters%2C%20no%20watermark&amp;image_size=portrait_4_3" alt="雾山五行动漫高清海报" loading="lazy" decoding="async">
+                <span class="quality-badge">HD</span><span class="rating-badge">8.8</span>
+                <span class="poster-action"><svg class="icon"><use href="#icon-play"/></svg></span>
+                <span class="poster-detail">动漫详情<svg class="icon" style="width:13px"><use href="#icon-arrow"/></svg></span>
+              </button>
+              <div class="movie-info"><h3>雾山五行</h3><div class="movie-meta"><span>国漫 · 热血</span><span class="update-label">全7集</span></div></div>
+            </article>
+          </div>
+          <div class="empty-state" id="emptyState" hidden>
+            <svg class="icon"><use href="#icon-search"/></svg>
+            <p>暂时没有找到相关内容，换个关键词试试吧</p>
+            <button class="text-button" id="resetFilters" type="button">查看全部影视</button>
+          </div>
+        </div>
+
+        <aside class="ranking-panel" aria-labelledby="rankingTitle">
+          <div class="ranking-header"><h2 id="rankingTitle">热播排行榜</h2><span>WEEKLY TOP 5</span></div>
+          <ol class="ranking-list">
+            <li><button class="rank-item" type="button" data-rank-title="漫长的季节"><span class="rank-number">01</span><span class="rank-copy"><strong>漫长的季节</strong><small>剧情 / 悬疑</small></span><span class="rank-heat"><svg class="icon"><use href="#icon-fire"/></svg>9.8</span></button></li>
+            <li><button class="rank-item" type="button" data-rank-title="凡人修仙传"><span class="rank-number">02</span><span class="rank-copy"><strong>凡人修仙传</strong><small>国漫 / 修仙</small></span><span class="rank-heat"><svg class="icon"><use href="#icon-fire"/></svg>9.6</span></button></li>
+            <li><button class="rank-item" type="button" data-rank-title="我的阿勒泰"><span class="rank-number">03</span><span class="rank-copy"><strong>我的阿勒泰</strong><small>剧情 / 治愈</small></span><span class="rank-heat"><svg class="icon"><use href="#icon-fire"/></svg>9.3</span></button></li>
+            <li><button class="rank-item" type="button" data-rank-title="繁花"><span class="rank-number">04</span><span class="rank-copy"><strong>繁花</strong><small>年代 / 都市</small></span><span class="rank-heat"><svg class="icon"><use href="#icon-fire"/></svg>9.1</span></button></li>
+            <li><button class="rank-item" type="button" data-rank-title="流浪地球2"><span class="rank-number">05</span><span class="rank-copy"><strong>流浪地球2</strong><small>科幻 / 冒险</small></span><span class="rank-heat"><svg class="icon"><use href="#icon-fire"/></svg>8.9</span></button></li>
+          </ol>
+          <div class="ranking-tip"><svg class="icon"><use href="#icon-clock"/></svg>榜单根据近期观影热度持续更新</div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="container">
+      <section class="editorial-banner" aria-labelledby="editorialTitle">
+        <div>
+          <span class="editorial-label"><svg class="icon"><use href="#icon-spark"/></svg>嫩草片单 · 周末特辑</span>
+          <h2 id="editorialTitle">今晚，把生活调成影院模式</h2>
+          <p>关掉纷扰，留一点时间给好故事。从震撼科幻到温暖治愈，总有一部作品与你此刻的心情刚好相配。</p>
+        </div>
+        <a class="button button-primary" href="#hot">发现本周好片<svg class="icon"><use href="#icon-arrow"/></svg></a>
+      </section>
+    </div>
+
+    <section class="seo-section container" aria-labelledby="aboutTitle">
+      <div class="seo-copy">
+        <span class="section-kicker">About nencao</span>
+        <h2 id="aboutTitle">嫩草视频，<br>找片追剧更省心</h2>
+        <p>嫩草视频收录电影、电视剧、综艺与动漫等内容，分类清晰、查找便捷，让找片追剧都更省时省心。无论你想追一部热门剧集，还是重温一部经典电影，都能在这里快速找到心仪的作品。</p>
+        <p>页面整理了热播排行与精选片单，并持续补充新鲜内容。愿你每一次打开嫩草视频，都有新的收获。</p>
+        <div class="feature-list">
+          <div class="feature-item"><svg class="icon"><use href="#icon-hd"/></svg><strong>海量高清</strong><small>多元题材 清晰呈现</small></div>
+          <div class="feature-item"><svg class="icon"><use href="#icon-bolt"/></svg><strong>极速体验</strong><small>轻松找片 快速直达</small></div>
+          <div class="feature-item"><svg class="icon"><use href="#icon-calendar"/></svg><strong>每日更新</strong><small>热门内容 持续补充</small></div>
+        </div>
+      </div>
+      <div class="faq" aria-labelledby="faqTitle">
+        <h2 class="faq-title" id="faqTitle">观影常见问题</h2>
+        <details class="faq-item" open>
+          <summary>嫩草视频可以观看哪些内容？</summary>
+          <p>嫩草视频收录电影、电视剧、综艺、动漫等多种影视内容，涵盖热门剧集、院线电影、人气综艺与精选动漫。你可以通过分类入口或顶部搜索快速查找感兴趣的作品。</p>
+        </details>
+        <details class="faq-item">
+          <summary>嫩草视频手机版如何使用？</summary>
+          <p>页面采用响应式设计，通过手机、平板或电脑浏览器打开嫩草视频即可浏览，会自动适配屏幕尺寸，让找片与查看影片信息同样方便。</p>
+        </details>
+        <details class="faq-item">
+          <summary>如何快速找到想看的影视剧？</summary>
+          <p>在顶部搜索框输入片名或类型，页面会即时筛选相关内容；也可以点击电影、电视剧、综艺、动漫分类，按自己的观影偏好浏览精选片单与热播排行。</p>
+        </details>
+        <details class="faq-item">
+          <summary>影视内容会持续更新吗？</summary>
+          <p>嫩草视频会持续整理热门影视内容与近期热播榜单，日常补充更多作品，让每一次到来都有新发现。</p>
+        </details>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-main">
+      <a class="brand" href="#home" aria-label="返回嫩草视频首页">
+        <span class="brand-mark"><svg class="icon"><use href="#icon-play"/></svg></span>
+        <span><span class="brand-name">嫩草视频</span><span class="brand-tagline">好故事，随时开场</span></span>
+      </a>
+      <nav class="footer-nav" aria-label="页脚导航"><a href="#home">网站首页</a><a href="#categories">影视分类</a><a href="#hot">热播推荐</a><a href="#aboutTitle">关于我们</a><a href="#faqTitle">常见问题</a></nav>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span id="currentYear">2026</span> 嫩草视频 · 精彩影视内容，一站尽览</span>
+      <span>影视作品及素材版权归原权利人所有，请支持正版内容</span>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" type="button" aria-label="返回顶部"><svg class="icon"><use href="#icon-up"/></svg></button>
+
+  <dialog class="movie-dialog" id="movieDialog" aria-labelledby="dialogTitle">
+    <button class="dialog-close" id="dialogClose" type="button" aria-label="关闭详情"><svg class="icon"><use href="#icon-close"/></svg></button>
+    <div class="dialog-layout">
+      <img class="dialog-poster" id="dialogPoster" src="" alt="">
+      <div class="dialog-content">
+        <span class="dialog-label">NENCAO SELECTION</span>
+        <h2 id="dialogTitle"></h2>
+        <p class="dialog-meta" id="dialogMeta"></p>
+        <p class="dialog-description" id="dialogDescription"></p>
+        <button class="button button-primary" id="dialogBrowse" type="button">继续找片<svg class="icon"><use href="#icon-arrow"/></svg></button>
+      </div>
+    </div>
+  </dialog>
+
+  <script>
+    const header = document.getElementById('siteHeader');
+    const backToTop = document.getElementById('backToTop');
+    const menuToggle = document.getElementById('menuToggle');
+    const mainNav = document.getElementById('mainNav');
+    const searchForm = document.getElementById('searchForm');
+    const searchInput = document.getElementById('searchInput');
+    const searchClear = document.getElementById('searchClear');
+    const searchStatus = document.getElementById('searchStatus');
+    const emptyState = document.getElementById('emptyState');
+    const resetFilters = document.getElementById('resetFilters');
+    const filterTabs = [...document.querySelectorAll('[data-filter]')];
+    const cards = [...document.querySelectorAll('.movie-card')];
+    const dialog = document.getElementById('movieDialog');
+    const dialogPoster = document.getElementById('dialogPoster');
+    const dialogTitle = document.getElementById('dialogTitle');
+    const dialogMeta = document.getElementById('dialogMeta');
+    const dialogDescription = document.getElementById('dialogDescription');
+    const categoryNames = { all: '全部', movie: '电影', series: '电视剧', variety: '综艺', anime: '动漫' };
+    let activeFilter = 'all';
+
+    function updateScrollState() {
+      header.classList.toggle('scrolled', window.scrollY > 10);
+      backToTop.classList.toggle('visible', window.scrollY > 600);
+    }
+
+    function closeMenu() {
+      mainNav.classList.remove('is-open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+      menuToggle.setAttribute('aria-label', '打开导航菜单');
+    }
+
+    function applyFilters() {
+      const query = searchInput.value.trim().toLowerCase();
+      let visibleCount = 0;
+      cards.forEach(card => {
+        const searchableText = `${card.dataset.title} ${card.dataset.genre} ${categoryNames[card.dataset.category]}`.toLowerCase();
+        const matchesCategory = activeFilter === 'all' || card.dataset.category === activeFilter;
+        const matchesSearch = !query || searchableText.includes(query);
+        const visible = matchesCategory && matchesSearch;
+        card.hidden = !visible;
+        if (visible) visibleCount += 1;
+      });
+      emptyState.hidden = visibleCount !== 0;
+      searchClear.classList.toggle('visible', query.length > 0);
+      if (query) {
+        searchStatus.textContent = `在${categoryNames[activeFilter]}分类中找到 ${visibleCount} 个与“${searchInput.value.trim()}”相关的内容`;
+      } else if (activeFilter !== 'all') {
+        searchStatus.textContent = `为你展示 ${visibleCount} 个${categoryNames[activeFilter]}精选内容`;
+      } else {
+        searchStatus.textContent = '';
+      }
+    }
+
+    function selectFilter(filter, shouldScroll = false) {
+      activeFilter = filter;
+      filterTabs.forEach(tab => {
+        const selected = tab.dataset.filter === filter;
+        tab.classList.toggle('active', selected);
+        tab.setAttribute('aria-pressed', String(selected));
+      });
+      applyFilters();
+      if (shouldScroll) document.getElementById('hot').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function openMovie(card) {
+      const poster = card.querySelector('img');
+      dialogPoster.src = poster.src;
+      dialogPoster.alt = poster.alt;
+      dialogTitle.textContent = card.dataset.title;
+      dialogMeta.textContent = `${card.dataset.year} · ${card.dataset.genre} · 评分 ${card.dataset.rating}`;
+      dialogDescription.textContent = card.dataset.description;
+      dialog.showModal();
+    }
+
+    window.addEventListener('scroll', updateScrollState, { passive: true });
+    updateScrollState();
+
+    menuToggle.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('is-open');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.setAttribute('aria-label', isOpen ? '关闭导航菜单' : '打开导航菜单');
+    });
+
+    mainNav.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.querySelectorAll('a').forEach(item => item.classList.remove('active'));
+        link.classList.add('active');
+        if (link.dataset.navFilter) selectFilter(link.dataset.navFilter);
+        closeMenu();
+      });
+    });
+
+    filterTabs.forEach(tab => tab.addEventListener('click', () => selectFilter(tab.dataset.filter)));
+
+    document.querySelectorAll('[data-category-target]').forEach(button => {
+      button.addEventListener('click', () => selectFilter(button.dataset.categoryTarget, true));
+    });
+
+    searchForm.addEventListener('submit', event => {
+      event.preventDefault();
+      applyFilters();
+      document.getElementById('hot').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    searchInput.addEventListener('input', applyFilters);
+
+    searchClear.addEventListener('click', () => {
+      searchInput.value = '';
+      applyFilters();
+      searchInput.focus();
+    });
+
+    resetFilters.addEventListener('click', () => {
+      searchInput.value = '';
+      selectFilter('all');
+    });
+
+    document.querySelectorAll('.poster-button').forEach(button => {
+      button.addEventListener('click', () => openMovie(button.closest('.movie-card')));
+    });
+
+    document.querySelectorAll('[data-rank-title]').forEach(button => {
+      button.addEventListener('click', () => {
+        const card = cards.find(item => item.dataset.title === button.dataset.rankTitle);
+        if (card) openMovie(card);
+      });
+    });
+
+    document.getElementById('dialogClose').addEventListener('click', () => dialog.close());
+    document.getElementById('dialogBrowse').addEventListener('click', () => {
+      dialog.close();
+      document.getElementById('hot').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    dialog.addEventListener('click', event => {
+      const rect = dialog.getBoundingClientRect();
+      const outside = event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+      if (outside) dialog.close();
+    });
+
+    backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
